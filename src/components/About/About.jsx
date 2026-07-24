@@ -8,7 +8,10 @@ import {
 
 const About = () => {
   return (
-    <section id="about" className="bg-white dark:bg-slate-900 py-24 transition-colors duration-300">
+    <section
+      id="about"
+      className="bg-white dark:bg-slate-900 py-24 transition-colors duration-300"
+    >
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
@@ -37,7 +40,6 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-
             <h3 className="text-3xl font-bold mb-6 text-blue-600">
               Frontend Developer & CSE Student
             </h3>
@@ -64,42 +66,41 @@ const About = () => {
               continuously learning new technologies.
             </p>
 
+            {/* Personal Information */}
             <div className="mt-8 space-y-3 text-gray-700 dark:text-gray-300">
 
-  <p>
-    <span className="font-semibold text-black dark:text-white">
-      🎓 Degree:
-    </span>{" "}
-    B.Tech (CSE)
-  </p>
+              <p>
+                <span className="font-semibold text-black dark:text-white">
+                  🎓 Degree:
+                </span>{" "}
+                B.Tech (CSE)
+              </p>
 
-  <p>
-    <span className="font-semibold text-black dark:text-white">
-      🏫 College:
-    </span>{" "}
-    B P Poddar Institute of Management and Technology
-  </p>
+              <p>
+                <span className="font-semibold text-black dark:text-white">
+                  🏫 College:
+                </span>{" "}
+                B P Poddar Institute of Management and Technology
+              </p>
 
-  <p>
-    <span className="font-semibold text-black dark:text-white">
-      📍 Location:
-    </span>{" "}
-    West Bengal, India
-  </p>
+              <p>
+                <span className="font-semibold text-black dark:text-white">
+                  📍 Location:
+                </span>{" "}
+                West Bengal, India
+              </p>
 
-  <p>
-    <span className="font-semibold text-black dark:text-white">
-      💻 Interests:
-    </span>{" "}
-    Frontend Development, React, DSA
-  </p>
+              <p>
+                <span className="font-semibold text-black dark:text-white">
+                  💻 Interests:
+                </span>{" "}
+                Frontend Development, React, DSA
+              </p>
 
-</div>
-
+            </div>
           </motion.div>
 
           {/* Right Side */}
-
           <motion.div
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -108,57 +109,61 @@ const About = () => {
             className="grid grid-cols-2 gap-6"
           >
 
-            <div className="bg-blue-50 dark:bg-white-800 text-black-100 rounded-xl p-6 shadow hover:shadow-xl transition">
+            {/* Frontend Card */}
+            <div className="bg-blue-50 dark:bg-slate-800 rounded-xl p-6 shadow hover:shadow-xl transition-colors duration-300">
 
               <FaLaptopCode className="text-5xl text-blue-600 mb-4" />
 
-              <h3 className="font-bold text-xl ">
+              <h3 className="font-bold text-xl text-gray-900 dark:text-white">
                 Frontend
               </h3>
 
-              <p className="text-gray-600 dark:text-gray-600 mt-2">
+              <p className="text-gray-600 dark:text-gray-300 mt-2">
                 HTML, CSS, JavaScript, React, Tailwind CSS
               </p>
 
             </div>
 
-            <div className="bg-blue-50 rounded-xl p-6 shadow hover:shadow-xl transition">
+            {/* Problem Solving Card */}
+            <div className="bg-blue-50 dark:bg-slate-800 rounded-xl p-6 shadow hover:shadow-xl transition-colors duration-300">
 
               <FaBrain className="text-5xl text-blue-600 mb-4" />
 
-              <h3 className="font-bold text-xl">
+              <h3 className="font-bold text-xl text-gray-900 dark:text-white">
                 Problem Solving
               </h3>
 
-              <p className="text-gray-600 dark:text-gray-600 mt-2">
+              <p className="text-gray-600 dark:text-gray-300 mt-2">
                 DSA, OOPs, DBMS, SQL, Operating Systems
               </p>
 
             </div>
 
-            <div className="bg-blue-50 rounded-xl p-6 shadow hover:shadow-xl transition">
+            {/* Education Card */}
+            <div className="bg-blue-50 dark:bg-slate-800 rounded-xl p-6 shadow hover:shadow-xl transition-colors duration-300">
 
               <FaGraduationCap className="text-5xl text-blue-600 mb-4" />
 
-              <h3 className="font-bold text-xl">
+              <h3 className="font-bold text-xl text-gray-900 dark:text-white">
                 Education
               </h3>
 
-              <p className="text-gray-600 mt-2">
+              <p className="text-gray-600 dark:text-gray-300 mt-2">
                 B.Tech Computer Science Engineering (2023–2027)
               </p>
 
             </div>
 
-            <div className="bg-blue-50 rounded-xl p-6 shadow hover:shadow-xl transition">
+            {/* Projects Card */}
+            <div className="bg-blue-50 dark:bg-slate-800 rounded-xl p-6 shadow hover:shadow-xl transition-colors duration-300">
 
               <FaCode className="text-5xl text-blue-600 mb-4" />
 
-              <h3 className="font-bold text-xl">
+              <h3 className="font-bold text-xl text-gray-900 dark:text-white">
                 Projects
               </h3>
 
-              <p className="text-gray-600 mt-2">
+              <p className="text-gray-600 dark:text-gray-300 mt-2">
                 Spotify Clone, Portfolio Website, Calculator App
               </p>
 
@@ -167,7 +172,6 @@ const About = () => {
           </motion.div>
 
         </div>
-
       </div>
     </section>
   );

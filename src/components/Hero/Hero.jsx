@@ -18,27 +18,28 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="text-blue-600 font-semibold text-lg">
-  Hello, I'm
-</p>
+            Hello, I'm
+          </p>
 
-<h1 className="text-5xl md:text-6xl font-bold mt-2 text-gray-900 dark:text-white">
-  Sayan Ghosh
-</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mt-2 text-gray-900 dark:text-white">
+            Sayan Ghosh
+          </h1>
 
-<TypeAnimation
-  sequence={[
-    "Frontend Developer",
-    2000,
-    "React Developer",
-    2000,
-    "Problem Solver",
-    2000,
-  ]}
-  wrapper="span"
-  speed={50}
-  repeat={Infinity}
-  className="text-3xl font-semibold text-blue-600 mt-4 block"
-/>
+          <TypeAnimation
+            sequence={[
+              "Frontend Developer",
+              2000,
+              "React Developer",
+              2000,
+              "Problem Solver",
+              2000,
+            ]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+            className="text-3xl font-semibold text-blue-600 mt-4 block"
+          />
+
           <p className="text-gray-600 dark:text-gray-300 mt-6 leading-7 max-w-xl">
             I build responsive, modern, and user-friendly web applications
             using React, JavaScript, Tailwind CSS, and Vite. I enjoy creating
@@ -64,25 +65,29 @@ const Hero = () => {
 
           {/* Social Icons */}
           <div className="flex gap-6 mt-8 text-3xl">
+
+            {/* GitHub */}
             <a
               href="https://github.com/yourusername"
               target="_blank"
               rel="noreferrer"
             >
-              <FaGithub className="hover:text-blue-600 transition" />
+              <FaGithub className="text-black dark:text-white hover:text-blue-600 transition-colors duration-300" />
             </a>
 
+            {/* LinkedIn */}
             <a
               href="https://linkedin.com/in/yourusername"
               target="_blank"
               rel="noreferrer"
             >
-              <FaLinkedin className="hover:text-blue-600 transition" />
+              <FaLinkedin className="text-black dark:text-blue-600 hover:text-blue-700 transition-colors duration-300" />
             </a>
+
           </div>
         </motion.div>
 
-        {/* Right Side */}
+        {/* Right Side - Profile Picture */}
         <motion.div
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
@@ -92,9 +97,10 @@ const Hero = () => {
           <img
             src={profile}
             alt="Profile"
-           className="w-72 md:w-96 rounded-full shadow-2xl border-4 border-blue-500 object-cover"
+            className="w-72 md:w-96 rounded-full shadow-2xl border-4 border-blue-500 object-cover"
           />
         </motion.div>
+
       </div>
     </section>
   );
